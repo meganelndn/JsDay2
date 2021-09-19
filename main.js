@@ -225,7 +225,7 @@ if(cprbindestreg.length != 10){
 if(checkcpr === true){
     //outputs valid
     console.log("Gyldigt CPR nummer:", cprvalue);
-} else{
+} else {
     //outputs invalid
     console.error("Ugyldigt CPR nummer:", cprvalue);
 }
@@ -234,3 +234,13 @@ if(checkcpr === true){
 // Write a JavaScript program with a function that can take an array as a parameter. The array must contain a minimum of 3 numbers. The function must return an array where each number has been multiplied by PI (ie 3.14).
 // Print the array in the console.
 console.info("%cExercise 24", "color: black; background: pink;")
+
+let PIResult;
+let numbers = [1, 2, 3]
+let arrFx = (numbers) => {
+    numbers.forEach(number => {
+        PIResult = number * Math.PI;
+    })
+    return PIResult;
+}
+console.log(PIResult);
